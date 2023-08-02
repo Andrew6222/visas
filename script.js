@@ -10,9 +10,6 @@ const slides = Array.from(slider.querySelectorAll("img"));
 const slideCount = slides.length;
 let slideIndex = 0;
 
-prevButton.addEventListener("click", showPreviousSlide);
-nextButton.addEventListener("click", showNextSlide);
-
 function showPreviousSlide() {
   slideIndex = (slideIndex - 1 + slideCount) % slideCount;
   updateSlider();
