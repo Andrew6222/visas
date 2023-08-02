@@ -43,6 +43,7 @@ img {
   display: flex;
   flex-direction: row;
   overflow: hidden;
+  z-index: 500;
 }
 .nav-list {
   display: flex;
@@ -75,7 +76,7 @@ img {
   border: none;
   background-color: transparent;
   position: relative;
-  z-index: 10;
+  z-index: 600;
 }
 
 .header-burger span {
@@ -243,25 +244,69 @@ img {
   height: 500px;
 }
 
-.prev-button,
-.next-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  border: none;
-  font-size: 50px;
+/* services */
+.services-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.services-container {
+  text-align: center;
+}
+.services-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.services-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 40px;
+  border-radius: 15px;
+  width: 42%;
+}
+.services-item-header {
+  font-size: 24px;
+}
+.services-item-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin: 50px 0;
+}
+.services-item-li {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.services-btn {
+  width: 100%;
+  display: block;
+  padding: 10px 0;
+  background-color: #fff;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #000;
+}
+.green-btn {
+  background-color: rgb(160, 255, 160);
   color: black;
 }
-
-.prev-button {
-  left: 10px;
+.blue-btn {
+  background-color: rgb(0, 19, 88);
+  color: #fff;
 }
-
-.next-button {
-  right: 10px;
+.services-left {
+  background-color: rgb(0, 19, 88);
+  color: #fff;
+}
+.services-right {
+  background-color: rgb(160, 255, 160);
+  color: #000;
 }
 
 /* modal */
