@@ -27,15 +27,21 @@
                 <li class="nav-item">
                   <a href="#" class="nav-link">Главная</a>
                 </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Языковая школа</a>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-nav-link"
+                    onclick="openDropdown()"
+                  >
+                    Услуги
+                  </a>
+                  <div class="nav-sublist" id="dropdown">
+                    <a href="" class="nav-sublink">Языковая школа</a>
+                    <a href="" class="nav-sublink">Услуги для бизнеса</a>
+                    <a href="" class="nav-sublink">Визы</a>
+                  </div>
                 </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Визы в Тайланд</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Услуги</a>
-                </li>
+
                 <li class="nav-item">
                   <a href="#" class="nav-link">Отзывы</a>
                 </li>
@@ -85,7 +91,8 @@
             </div>
           </nav>
           <div class="header-contacts">
-            <a href="tel:+66661075986" class="header-contact">+66661075986</a>
+            <img src="./image/phone.svg" />
+            <a href="tel:+66661075986" class="header-contact">+66661075986 </a>
           </div>
         </div>
       </header>
@@ -211,6 +218,10 @@
             <h2 class="section-header">Услуги</h2>
             <div class="services-content">
               <div class="services-item services-left">
+                <img
+                  src="./image/services/services1.jpg"
+                  class="services-left-img"
+                />
                 <h3 class="services-item-header">Услуги для бизнеса</h3>
                 <ul class="services-item-list">
                   <li class="services-item-li">Открытие компании</li>
@@ -226,6 +237,10 @@
               </div>
 
               <div class="services-item services-right">
+                <img
+                  src="./image/services/services2.jpg"
+                  class="services-right-img"
+                />
                 <h3 class="services-item-header">
                   Услуги для туристов/экспатов
                 </h3>
