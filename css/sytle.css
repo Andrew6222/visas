@@ -147,12 +147,24 @@ img {
   height: 60vh;
   display: flex;
   align-items: center;
+  position: relative;
   /* background: linear-gradient(
     to right,
     rgb(140, 140, 255),
     30%,
     rgb(255, 255, 255)
   ); */
+}
+.circle {
+  position: absolute;
+  width: 1800px;
+  height: 1800px;
+  top: -700px;
+  left: -800px;
+  z-index: -1;
+  background-color: rgb(220, 220, 255);
+  border-radius: 50%;
+  overflow: hidden;
 }
 .hiddenblock {
   opacity: 0;
@@ -211,9 +223,12 @@ img {
 }
 /* ---------------- about -------------------- */
 
-/* .about-section {
+.about-section {
   background-color: rgb(232, 255, 232);
-} */
+  /* background-color: #fff; */
+  position: relative;
+  z-index: -1;
+}
 .about-container {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -225,7 +240,7 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  background-color: #9097ff;
+  /* background-color: #9097ff; */
   margin-top: 50px;
 }
 
