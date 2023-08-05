@@ -93,3 +93,8 @@ window.onclick = function (event) {
     }
   }
 };
+
+window.addEventListener("load", () => {
+  document.getElementById("circle").classList.add("circle-append");
+  // console.log(document.getElementById("circle"));
+});
