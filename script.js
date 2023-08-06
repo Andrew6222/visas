@@ -46,7 +46,7 @@ displayFunc = () => {
 };
 setInterval(() => {
   displayFunc();
-}, 5000);
+}, 10000);
 
 // modal
 const btns = document.querySelectorAll(".btn");
@@ -96,5 +96,5 @@ window.onclick = function (event) {
 
 window.addEventListener("load", () => {
   document.getElementById("circle").classList.add("circle-append");
-  // console.log(document.getElementById("circle"));
+  document.getElementById("hero1").classList.add("hero1show");
 });
