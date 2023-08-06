@@ -224,6 +224,9 @@ img {
 }
 .hero-pic {
   max-height: 350px;
+  text-align: right;
+  display: block;
+  margin-left: auto;
 }
 /* ---------------- about -------------------- */
 
