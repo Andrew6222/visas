@@ -46,13 +46,14 @@
             <div class="nav-items">
               <ul class="nav-list">
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Главная</a>
+                  <a href="#" class="nav-link" id="nav_link_main">Главная</a>
                 </li>
 
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-nav-link"
                     onclick="openDropdown()"
+                    id="nav_link_services"
                   >
                     Услуги
                   </a>
@@ -70,7 +71,8 @@
                   <a href="#" class="nav-link">Контакты</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Русский/English</a>
+                  <a href="#" class="nav-link" onclick="changeLanguage('ru')">Русский</a> /
+                  <a href="#" class="nav-link" onclick="changeLanguage('en')">English</a>
                 </li>
               </ul>
               <!-- <ul class="nav-list nav-list-contacts">
@@ -372,5 +374,6 @@
       </div>
     </div>
     <script src="./script.js" defer></script>
+    <script src="./translate.js" defer></script>
   </body>
 </html>
