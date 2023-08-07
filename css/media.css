@@ -1,4 +1,21 @@
+@media (max-width: 1200px) {
+}
+
 @media (max-width: 1150px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .circle {
+    width: 1600px;
+    top: -600px;
+  }
+  .services-item {
+    width: 38%;
+  }
+  .services-btn {
+    width: 60%;
+  }
   .about-content {
     gap: 30px;
   }
@@ -6,7 +23,66 @@
     height: 300px;
   }
 }
-
+@media (max-width: 1024px) {
+  .header-contacts {
+    display: none;
+  }
+  .section-header {
+    font-size: 26px;
+  }
+  .hero-pic {
+    max-height: 320px;
+    max-width: 320px;
+  }
+  .about-content {
+    margin: 0;
+  }
+  .about-btn {
+    margin-top: 0;
+  }
+  .circle {
+    top: -700px;
+  }
+  .services-item {
+    padding: 50px;
+  }
+  .services-item-header {
+    white-space: nowrap;
+  }
+  .find-map {
+    max-width: 50%;
+    max-height: 50%;
+  }
+  .iframe {
+    max-width: 100%;
+    max-height: 300px;
+  }
+}
+@media (max-width: 970px) {
+  * {
+    font-size: 15px;
+  }
+  .section-header {
+    font-size: 24px;
+  }
+  .circle {
+    top: -730px;
+    width: 1500px;
+  }
+  .about-content-icon {
+    width: 55px;
+  }
+  .services-item {
+    padding: 45px;
+  }
+  .services-btn {
+    width: 70%;
+  }
+  .services-section {
+    padding-bottom: 50px;
+    padding-top: 95px;
+  }
+}
 @media (max-width: 900px) {
   .header-burger {
     display: block;
@@ -19,7 +95,6 @@
     background-color: rgb(0, 19, 88);
     padding: 75px 20px 20px 20px;
     transition: transform 0.5s;
-    /* height: 100vh; */
   }
   .nav-items {
     display: block;
@@ -39,75 +114,216 @@
   .header.open .nav {
     transform: translateX(102.5%);
   }
-
-  /* -------------------- */
-  .nav-items {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    margin-left: 40px;
+  /* ВОТ ТО ЧТО ВЫШЕ В ЭТОМ МЕДИА ЗАПРОСЕ НЕ ТРОГАТЬ ЭТО БУРГЕР */
+  .hero-pic {
+    max-width: 300px;
+    max-height: 300px;
   }
-  .nav-item {
-    margin-bottom: 20px;
-  }
-
-  .nav-list-contacts {
-    flex-direction: row;
-  }
-}
-
-@media (max-width: 991px) {
-  .hero-container {
-    width: 60%;
-  }
-  .about-content {
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 816px) {
   .hero-section {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
+  }
+  .about-content-text {
+    font-size: 15px;
+  }
+  .about-content-list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .slider-container {
+    width: 100%;
+    max-height: 270px;
+  }
+  .footer-logo-img {
+    width: 100px;
+  }
+  .footer-logo {
+    font-size: 30px;
+  }
+}
+@media (max-width: 850px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .hero-section {
+    height: 55vh;
+  }
+  .hero-item-content {
+    width: 120%;
   }
   .hero-img {
-    display: none;
+    position: relative;
+    z-index: -2;
   }
-  .hero-container {
-    width: 100%;
+  .about-content-icon {
+    width: 45px;
   }
-  .hero-item {
-    grid-template-columns: 100%;
-    background: url(../image/hero/hero1.jpg) no-repeat center right;
-    backdrop-filter: blur(1000px);
-    background-size: cover;
-    max-height: 100%;
+  .services-item-header {
+    font-size: 22px;
+  }
+  .services-item-li {
+    font-size: 16px;
+  }
+  .services-item {
+    padding: 40px;
+  }
+  .find-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .find-item-img {
+    width: 45px;
   }
 }
-@media (max-width: 690px) {
-  .slider-container {
-    max-width: 550px;
+@media (max-width: 775px) {
+  .services-btn {
+    width: 75%;
   }
-  .header-contacts {
-    display: none;
+  .services-item {
+    padding: 35px;
   }
 }
-
-@media (max-width: 545px) {
+@media (max-width: 715px) {
   .section-header {
-    font-size: 24px;
+    font-size: 22px;
   }
   .hero-text {
-    margin: 15px 0;
-    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
-  .hero-btn,
-  .about-btn {
-    font-size: 18px;
+  .about-content-item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  .about-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .slider-container {
+    max-height: 250px;
+  }
+  .services-left-img {
+    left: -60px;
+  }
+  .services-right-img {
+    right: -60px;
+  }
+  .services-item {
+    padding: 30px;
+  }
+  .services-item-header {
+    font-size: 20px;
+  }
+  .services-item-list {
+    margin: 30px 0;
+  }
+  .services-btn {
+    width: 100%;
+  }
+  .footer-logo {
+    font-size: 26px;
+  }
+  .footer-logo-img {
+    width: 85px;
   }
 }
-
-@media (max-width: 475px) {
-  .slider img {
-    max-height: 280px;
+@media (max-width: 670px) {
+  .about-content {
+    display: flex;
+    flex-direction: column;
   }
+  .about-content-icon {
+    width: 60px;
+  }
+  .about-content-text {
+    font-size: 16px;
+  }
+  .about-content-list {
+    padding-bottom: 0;
+  }
+  .about-btn {
+    margin-top: 20px;
+  }
+  .slider-container {
+    width: 90%;
+  }
+  .services-content {
+    flex-direction: column;
+  }
+  .services-item {
+    width: 80%;
+  }
+  .services-item:first-child {
+    margin-bottom: 220px;
+  }
+  .services-right-img {
+    top: -220px;
+  }
+  .services-btn {
+    width: 60%;
+  }
+  .find-content {
+    flex-direction: column-reverse;
+  }
+  .find-map {
+    min-width: 100%;
+  }
+  .find-list {
+    margin-top: 20px;
+  }
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-content {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 610px) {
+  .circle {
+    display: none;
+  }
+  .hero-img {
+    transform: translateX(-300px) translateY(30px);
+    opacity: 0.3;
+  }
+  .hero-item {
+    width: 150%;
+  }
+  .header-container {
+    max-width: 100%;
+  }
+}
+@media (max-width: 550px) {
+}
+@media (max-width: 500px) {
+  .hero-img {
+    transform: translateX(-350px) translateY(30px);
+  }
+  .hero-item {
+    width: 130%;
+  }
+  .hero-section {
+    padding-bottom: 0;
+    height: 50vh;
+  }
+  .hero-text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .services-btn {
+    width: 80%;
+  }
+}
+@media (max-width: 450px) {
+  .section-header {
+    font-size: 20px;
+  }
+  .hero-item {
+    width: 110%;
+  }
+}
+@media (max-width: 400px) {
 }

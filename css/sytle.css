@@ -1,5 +1,8 @@
 /* общее */
-
+:root {
+  --color-green: #14a800;
+}
+/*  var(--color-green) */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -214,7 +217,7 @@ img {
   flex-direction: row;
 }
 .hero-btn {
-  background-color: green;
+  background-color: var(--color-green);
   color: #fff;
   padding: 10px 20px;
   border-radius: 15px;
@@ -280,7 +283,7 @@ img {
 }
 .about-btn {
   margin-top: 30px;
-  background-color: green;
+  background-color: var(--color-green);
   color: #fff;
   padding: 10px 20px;
   border-radius: 15px;
@@ -361,7 +364,7 @@ img {
   color: #000;
 }
 .green-btn {
-  background-color: green;
+  background-color: var(--color-green);
   color: black;
 }
 .blue-btn {
@@ -380,7 +383,7 @@ img {
   z-index: -1;
 }
 .services-right {
-  background-color: green;
+  background-color: var(--color-green);
   color: #000;
   position: relative;
 }
