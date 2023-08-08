@@ -55,7 +55,11 @@ const text = {
     { find_time_2: "Пн. - Сб. с 8:00 до 17:00 Вс - выходной" },
     { find_mail: "Почта:" },
     { find_adress: "Адрес:" },
-    // {:''},
+    { contact_us: "Оставить заявку" },
+    { more_details_1: "Подробнее" },
+    { more_details_2: "Подробнее" },
+    { manager_1: "Связаться с менеджером" },
+    { manager_2: "Связаться с менеджером" },
   ],
   en: [
     { nav_link_main: "Home" },
@@ -113,6 +117,11 @@ const text = {
     { find_time_2: "Mon. - Sat. from 8:00 am to 5:00pm Sun - day off" },
     { find_mail: "Mail:" },
     { find_adress: "Address:" },
+    { contact_us: "Contact us" },
+    { more_details_1: "More details" },
+    { more_details_2: "More details" },
+    { manager_1: "Contact a manager" },
+    { manager_2: "Contact a manager" },
   ],
 };
 
