@@ -3,50 +3,50 @@ document.getElementById("burger").addEventListener("click", () => {
   document.querySelector("header").classList.toggle("open");
 });
 // slider
-const slider = document.querySelector(".slider");
-const prevButton = document.querySelector(".prev-button");
-const nextButton = document.querySelector(".next-button");
-const slides = Array.from(slider.querySelectorAll("img"));
-const slideCount = slides.length;
-let slideIndex = 0;
+// const slider = document.querySelector(".slider");
+// const prevButton = document.querySelector(".prev-button");
+// const nextButton = document.querySelector(".next-button");
+// const slides = Array.from(slider.querySelectorAll("img"));
+// const slideCount = slides.length;
+// let slideIndex = 0;
 
-function showPreviousSlide() {
-  slideIndex = (slideIndex - 1 + slideCount) % slideCount;
-  updateSlider();
-}
+// function showPreviousSlide() {
+//   slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+//   updateSlider();
+// }
 
-function showNextSlide() {
-  slideIndex = (slideIndex + 1) % slideCount;
-  updateSlider();
-}
+// function showNextSlide() {
+//   slideIndex = (slideIndex + 1) % slideCount;
+//   updateSlider();
+// }
 
-function updateSlider() {
-  slides.forEach((slide, index) => {
-    if (index === slideIndex) {
-      slide.style.display = "block";
-    } else {
-      slide.style.display = "none";
-    }
-  });
-}
+// function updateSlider() {
+//   slides.forEach((slide, index) => {
+//     if (index === slideIndex) {
+//       slide.style.display = "block";
+//     } else {
+//       slide.style.display = "none";
+//     }
+//   });
+// }
 
-updateSlider();
-setInterval(showPreviousSlide, 3000);
-// hero slider
+// updateSlider();
+// setInterval(showPreviousSlide, 3000);
+// // hero slider
 
-let hero1 = document.getElementById("hero1");
-let hero2 = document.getElementById("hero2");
-displayFunc = () => {
-  hero1.classList.toggle("displaynone");
-  hero2.classList.toggle("displaynone");
-  // hero1.classList.toggle("hiddenblock");
-  // hero2.classList.toggle("hiddenblock");
-  // hero1.classList.toggle("showblock");
-  // hero2.classList.toggle("showblock");
-};
-setInterval(() => {
-  displayFunc();
-}, 10000);
+// let hero1 = document.getElementById("hero1");
+// let hero2 = document.getElementById("hero2");
+// displayFunc = () => {
+//   hero1.classList.toggle("displaynone");
+//   hero2.classList.toggle("displaynone");
+//   // hero1.classList.toggle("hiddenblock");
+//   // hero2.classList.toggle("hiddenblock");
+//   // hero1.classList.toggle("showblock");
+//   // hero2.classList.toggle("showblock");
+// };
+// setInterval(() => {
+//   displayFunc();
+// }, 10000);
 
 // modal
 const btns = document.querySelectorAll(".btn");

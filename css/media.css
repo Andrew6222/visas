@@ -2,9 +2,16 @@
 }
 
 @media (max-width: 1150px) {
-  .container {
+  /* .container {
     padding-left: 30px;
     padding-right: 30px;
+  } */
+  .hero-item {
+    box-sizing: border-box;
+    padding: 0 30px;
+  }
+  .about-content-list {
+    padding: 0 30px;
   }
   .circle {
     width: 1600px;
@@ -89,9 +96,10 @@
   }
   .nav {
     position: absolute;
-    left: -400px;
+    left: 0;
+    right: 0;
     top: 0;
-    width: 350px;
+    /* width: 350px; */
     background-color: rgb(0, 19, 88);
     padding: 75px 20px 20px 20px;
     transition: transform 0.5s;
@@ -110,11 +118,17 @@
     flex-direction: column;
     padding: 0;
   }
+  .header .nav {
+    /* transform: translateX(102.5%); */
+    display: none;
+  }
 
   .header.open .nav {
-    transform: translateX(102.5%);
+    /* transform: translateX(102.5%); */
+    display: block;
   }
   /* ВОТ ТО ЧТО ВЫШЕ В ЭТОМ МЕДИА ЗАПРОСЕ НЕ ТРОГАТЬ ЭТО БУРГЕР */
+  /* я потрогал */
   .hero-pic {
     max-width: 300px;
     max-height: 300px;
@@ -141,9 +155,16 @@
   }
 }
 @media (max-width: 850px) {
-  .container {
+  /* .container {
     padding-left: 15px;
     padding-right: 15px;
+  } */
+  .hero-item {
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+  .about-content-list {
+    padding: 0 15px;
   }
   .hero-section {
     height: 55vh;
@@ -306,6 +327,27 @@
   }
 }
 @media (max-width: 550px) {
+  .hero-item {
+    margin-top: 50px;
+  }
+  .hero-section {
+    position: relative;
+  }
+  .hero-item.hero1show {
+    display: block;
+  }
+  .hero-item-content {
+    width: 95%;
+  }
+  .hero-img {
+    position: absolute;
+    right: 5px;
+    top: calc(50% - 100px);
+    transform: none !important;
+  }
+  .services-right-img {
+    right: -5px;
+  }
 }
 @media (max-width: 500px) {
   .hero-img {
@@ -333,6 +375,15 @@
   .hero-item {
     width: 110%;
   }
+  .about-section {
+    margin-top: 50px;
+  }
 }
 @media (max-width: 400px) {
+  .hero-item {
+    margin-top: 150px;
+  }
+  .about-section {
+    margin-top: 150px;
+  }
 }
