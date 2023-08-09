@@ -51,7 +51,9 @@ img {
 .nav {
   display: flex;
   flex-direction: row;
+  /* align-items: center; */
   z-index: 500;
+  /* height: 100vh; */
 }
 .nav-list {
   display: flex;
