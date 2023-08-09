@@ -378,8 +378,8 @@ p {
 }
 * {
   font-size: 16px;
-  /* font-family: "neue"; */
-  font-family: sans-serif;
+  font-family: "neue";
+  /* font-family: sans-serif; */
   margin: 0;
   padding: 0;
 }
