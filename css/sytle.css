@@ -1,8 +1,12 @@
 /* общее */
 :root {
   --color-green: #14a800;
+  --color-blue: rgb(220, 220, 255);
+  --color-light-green: rgb(232, 255, 232);
 }
 /*  var(--color-green) */
+/*  var(--color-blue) */
+/*  var(--color-light-green) */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -23,7 +27,8 @@ img {
 
 /* header */
 .header {
-  background-color: rgb(0, 19, 88);
+  /* background-color: rgb(0, 19, 88); */
+  background-color: #fff;
   padding: 0 15px;
   position: fixed;
   left: 0;
@@ -43,10 +48,11 @@ img {
   align-items: center;
 }
 .logo-img {
-  width: 70px;
+  width: 60px;
+  transform: rotate(-2deg);
 }
 .logo-text {
-  font-size: 22px;
+  font-size: 20px;
 }
 .nav {
   display: flex;
@@ -174,7 +180,8 @@ img {
   top: -700px;
   left: -1800px;
   z-index: -1;
-  background-color: rgb(220, 220, 255);
+  /* background-color: rgb(220, 220, 255); */
+  background-color: var(--color-light-green);
   border-radius: 50%;
   overflow: hidden;
 }
@@ -243,8 +250,9 @@ img {
 /* ---------------- about -------------------- */
 
 .about-section {
-  background-color: rgb(232, 255, 232);
-  /* background-color: #fff; */
+  /* background-color: rgb(232, 255, 232); */
+  background-color: var(--color-blue);
+
   position: relative;
   z-index: -1;
 }
@@ -370,11 +378,13 @@ img {
   color: black;
 }
 .blue-btn {
-  background-color: rgb(0, 19, 88);
+  /* background-color: rgb(0, 19, 88); */
+  background-color: var(--color-blue);
   color: #fff;
 }
 .services-left {
-  background-color: rgb(0, 19, 88);
+  /* background-color: rgb(0, 19, 88); */
+  background-color: var(--color-blue);
   color: #fff;
   position: relative;
 }
@@ -398,7 +408,7 @@ img {
 /* find */
 
 .find-section {
-  background-color: rgb(232, 255, 232);
+  background-color: var(--color-light-green);
 }
 .find-container {
   display: flex;
