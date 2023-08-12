@@ -383,8 +383,7 @@ p {
 }
 * {
   font-size: 16px;
-  font-family: "rza";
-  /* font-family: sans-serif; */
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
 }
