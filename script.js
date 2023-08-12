@@ -96,5 +96,5 @@ window.onclick = function (event) {
 
 window.addEventListener("load", () => {
   document.getElementById("circle").classList.add("circle-append");
-  document.getElementById("hero1").classList.add("hero1show");
+  // document.getElementById("hero1").classList.add("hero1show");
 });

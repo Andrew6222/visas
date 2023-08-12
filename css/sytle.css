@@ -1,7 +1,8 @@
 /* общее */
 :root {
   --color-green: #14a800;
-  --color-blue: rgb(220, 220, 255);
+  /* --color-blue: rgb(220, 220, 255); */
+  --color-blue: rgb(158, 158, 255);
   --color-light-green: rgb(232, 255, 232);
 }
 /*  var(--color-green) */
@@ -28,7 +29,8 @@ img {
 /* header */
 .header {
   /* background-color: rgb(0, 19, 88); */
-  background-color: #fff;
+  background-color: var(--color-blue);
+  box-shadow: 0px 5px 20px var(--color-blue);
   padding: 0 15px;
   position: fixed;
   left: 0;
@@ -42,7 +44,7 @@ img {
   align-items: center;
 }
 .logo {
-  color: rgb(80, 255, 80);
+  color: rgb(23, 194, 23);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -79,7 +81,8 @@ img {
   border-radius: 12px;
 }
 .nav-link {
-  color: rgb(80, 255, 80);
+  /* color: rgb(33, 255, 33); */
+  color: #000;
 }
 .dropdown {
   position: relative;
@@ -111,7 +114,8 @@ img {
   align-items: center;
 }
 .header-contact {
-  color: rgb(80, 255, 80);
+  /* color: rgb(80, 255, 80); */
+  color: #000;
   margin-left: 10px;
 }
 
@@ -437,7 +441,9 @@ img {
   align-items: start;
   /* justify-content: space-between; */
 }
-
+.find-img-1 {
+  transform: translateY(10px);
+}
 .find-item:not(:last-child) {
   margin-bottom: 20px;
 }

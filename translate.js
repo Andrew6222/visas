@@ -71,7 +71,7 @@ const text = {
     { contacts: "Contacts" },
     {
       hero_header_1:
-        "Provision of professional services in Thailand for tourists and expats!",
+        "Provision of Professional Services in Thailand for Tourists and Expats!",
     },
     {
       hero_text_1:
@@ -79,7 +79,7 @@ const text = {
     },
     {
       hero_header_2:
-        "The Student Visa (ED-Visa) to Thailand with Oriental Bamboo is simple and safe!",
+        "The Student Visa (ED-Visa) to Thailand with Oriental Bamboo is Simple and Safe!",
     },
     {
       hero_text_2:
@@ -89,7 +89,7 @@ const text = {
     { connet_2: "Contact us" },
     { show_more_1: "Show more" },
     { show_more_2: "Show more" },
-    { about: "Why do people choose us" },
+    { about: "Why Do People Choose Us" },
     { about_1: "The largest school in Phuket" },
     { about_2: "We have been operating for over 10 years" },
     { about_3: "We deal with all types of visas" },
@@ -111,7 +111,7 @@ const text = {
     { services_23: `Driver's license assistance` },
     { services_24: "Immigration services" },
     { services_25: "Border run/Visa run assistance" },
-    { find: "How to find us" },
+    { find: "How to Find Us" },
     { find_phone: "Phone number:" },
     { find_time_1: "Working hours:" },
     { find_time_2: "Mon. - Sat. from 8:00 am to 5:00pm Sun - day off" },
