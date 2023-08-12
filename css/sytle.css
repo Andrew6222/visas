@@ -1,9 +1,9 @@
 /* общее */
 :root {
   --color-green: #14a800;
-  /* --color-blue: rgb(220, 220, 255); */
-  --color-blue: rgb(158, 158, 255);
+  --color-blue: rgb(220, 220, 255);
   --color-light-green: rgb(232, 255, 232);
+  --color-dark-green: #13544e;
 }
 /*  var(--color-green) */
 /*  var(--color-blue) */
@@ -16,7 +16,7 @@
 .section-header {
   /* text-align: center; */
   font-weight: 800;
-  font-size: 30px;
+  font-size: 32px;
 }
 img {
   max-width: 100%;
@@ -28,9 +28,8 @@ img {
 
 /* header */
 .header {
-  /* background-color: rgb(0, 19, 88); */
-  background-color: var(--color-blue);
-  box-shadow: 0px 5px 20px var(--color-blue);
+  background-color: #fff;
+  box-shadow: 0px 5px 20px grey;
   padding: 0 15px;
   position: fixed;
   left: 0;
@@ -54,7 +53,9 @@ img {
   transform: rotate(-2deg);
 }
 .logo-text {
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-green);
 }
 .nav {
   display: flex;
@@ -74,14 +75,11 @@ img {
 .nav-item:not(:last-child) {
   margin-right: 20px;
 }
-.nav-item:last-child {
-  background-color: green;
-  color: aliceblue;
-  padding: 10px 20px;
-  border-radius: 12px;
+/* .nav-item:last-child {
+} */
+.nav-lang {
 }
 .nav-link {
-  /* color: rgb(33, 255, 33); */
   color: #000;
 }
 .dropdown {
@@ -105,6 +103,16 @@ img {
   display: block;
   z-index: 11;
 }
+.nav-arrow {
+  display: block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  margin-right: 60px;
+  transform: rotate(-45deg);
+}
 .drpdownshow {
   display: block;
 }
@@ -112,6 +120,10 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+}
+.header-contacts * {
+  margin-right: 15px;
 }
 .header-contact {
   /* color: rgb(80, 255, 80); */
@@ -185,7 +197,7 @@ img {
   left: -1800px;
   z-index: -1;
   /* background-color: rgb(220, 220, 255); */
-  background-color: var(--color-light-green);
+  background-color: var(--color-blue);
   border-radius: 50%;
   overflow: hidden;
 }
@@ -225,6 +237,7 @@ img {
 }
 .hero-text {
   line-height: 1.5;
+  font-size: 18px;
 }
 .hero-btns {
   display: flex;
@@ -254,8 +267,7 @@ img {
 /* ---------------- about -------------------- */
 
 .about-section {
-  /* background-color: rgb(232, 255, 232); */
-  background-color: var(--color-blue);
+  background-color: var(--color-light-green);
 
   position: relative;
   z-index: -1;
@@ -297,7 +309,7 @@ img {
 }
 .about-btn {
   margin-top: 30px;
-  background-color: var(--color-green);
+  background-color: var(--color-dark-green);
   color: #fff;
   padding: 10px 20px;
   border-radius: 15px;
@@ -378,7 +390,7 @@ img {
   color: #000;
 }
 .green-btn {
-  background-color: var(--color-green);
+  background-color: var(--color-dark-green);
   color: black;
 }
 .blue-btn {
@@ -393,21 +405,25 @@ img {
   position: relative;
 }
 .services-left-img {
+  width: 300px;
+  height: 300px;
   position: absolute;
-  left: -200px;
-  top: -150px;
-  z-index: -1;
+  left: -120px;
+  top: -160px;
+  /* z-index: -1; */
 }
 .services-right {
-  background-color: var(--color-green);
+  background-color: var(--color-dark-green);
   color: #000;
   position: relative;
 }
 .services-right-img {
   position: absolute;
-  right: -200px;
-  top: -150px;
-  z-index: -1;
+  right: -140px;
+  bottom: -15px;
+  /* z-index: -1; */
+  width: 300px;
+  height: 300px;
 }
 /* find */
 
@@ -420,6 +436,7 @@ img {
   align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
+  position: relative;
 }
 .find-content {
   display: flex;
@@ -441,8 +458,19 @@ img {
   align-items: start;
   /* justify-content: space-between; */
 }
+.find-img {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: -100px;
+  left: 50px;
+}
 .find-img-1 {
   transform: translateY(10px);
+}
+.find-item-img {
+  width: 50px;
+  height: 50px;
 }
 .find-item:not(:last-child) {
   margin-bottom: 20px;

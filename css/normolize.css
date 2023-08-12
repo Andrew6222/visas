@@ -376,9 +376,14 @@ p {
   src: url(../fonts/neue-montreal-medium.woff2) format("woff2");
   font-weight: 400;
 }
+@font-face {
+  font-family: "rza";
+  src: url(../fonts/rza-regular.woff2) format("woff2");
+  font-weight: 400;
+}
 * {
   font-size: 16px;
-  font-family: "neue";
+  font-family: "rza";
   /* font-family: sans-serif; */
   margin: 0;
   padding: 0;
