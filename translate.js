@@ -60,6 +60,12 @@ const text = {
     { more_details_2: "Подробнее" },
     { manager_1: "Связаться с менеджером" },
     { manager_2: "Связаться с менеджером" },
+    { footer_main: "Главная" },
+    { footer_services: "Услуги" },
+    { footer_services_1: "Услуги для бизнеса" },
+    { footer_school: "Языковая школа" },
+    { footer_visa: "Визы" },
+    { footer_review: "Отзывы" },
   ],
   en: [
     { nav_link_main: "Home" },
@@ -122,6 +128,12 @@ const text = {
     { more_details_2: "More details" },
     { manager_1: "Contact a manager" },
     { manager_2: "Contact a manager" },
+    { footer_main: "Home" },
+    { footer_services: "Services" },
+    { footer_services_1: "Business services" },
+    { footer_school: "Language school" },
+    { footer_visa: "Visa" },
+    { footer_review: "Reviews" },
   ],
 };
 
