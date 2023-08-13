@@ -1,5 +1,4 @@
 .nav-link:hover {
-  color: #ffffff;
   position: relative;
   cursor: pointer;
   z-index: 500;
@@ -13,7 +12,7 @@
   bottom: -3px;
   width: 0;
   height: 2px;
-  background-color: #ffffff;
+  background-color: #000000;
   transition: all 0.5s;
   z-index: 500;
 }
@@ -25,13 +24,22 @@
   position: absolute;
   bottom: -3px;
   height: 2px;
-  background-color: #ffffff;
+  background-color: #000000;
   transition: all 0.5s;
   z-index: 500;
 }
-.about-btn:hover,
-.hero-btn:hover {
+.nav-sublink:hover {
+  background-color: rgb(207, 207, 207);
+}
+.hero-btn:hover,
+.about-btn:hover {
+  color: var(--color-green);
   background-color: transparent;
-  border: 1px solid green;
-  transition: all 0.3s;
+  border: 1px solid var(--color-green);
+  transition: all 0.5s;
+}
+.black-btn:hover {
+  background-color: #000;
+  color: #fff;
+  transition: all 0.5s;
 }

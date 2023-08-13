@@ -71,7 +71,7 @@ const text = {
     { nav_link_main: "Home" },
     { nav_link_services: "Services" },
     { nav_sublink_school: "Language school" },
-    { nav_sublink_services: "business services" },
+    { nav_sublink_services: "Business services" },
     { nav_sublink_visa: "Visa" },
     { reviews: "Reviews" },
     { contacts: "Contacts" },
