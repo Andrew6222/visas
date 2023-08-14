@@ -273,7 +273,7 @@ img {
 /* ---------------- about -------------------- */
 
 .about-section {
-  background-color: var(--color-blue);
+  background-color: #fff;
 
   position: relative;
   z-index: -1;
@@ -289,8 +289,10 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  /* background-color: #9097ff; */
+  background-color: #1f57c3;
   margin-top: 50px;
+  padding: 15px;
+  border-radius: 15px;
 }
 
 .about-content-list {
@@ -298,20 +300,21 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   padding: 30px;
 }
 
 .about-content-item {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   align-items: center;
 }
-.about-content-item:not(:last-child) {
+/* .about-content-item:not(:last-child) {
   margin-bottom: 15px;
-}
+} */
 .about-content-text {
   font-size: 18px;
+  color: #fff;
 }
 .about-btn {
   margin-top: 30px;
@@ -329,16 +332,17 @@ img {
 /* ---------------------------------------------------- */
 .slider-container {
   position: relative;
-  /* width: 600px; */
   height: 400px;
   margin: 0 auto;
   overflow: hidden;
   height: 100%;
+  border-radius: 15px;
 }
 
 .slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  height: 500px;
 }
 
 .slider img {
@@ -373,7 +377,7 @@ img {
   width: 40%;
 }
 .services-item-header {
-  font-size: 24px;
+  font-size: 28px;
 
   font-family: "rza";
 }
@@ -386,7 +390,7 @@ img {
 }
 .services-item-li {
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 20px;
 }
 .services-btn {
   width: 50%;
@@ -399,17 +403,15 @@ img {
   color: #000;
 }
 .green-btn {
-  background-color: var(--color-dark-green);
+  background-color: var(--color-green);
   color: black;
 }
 .blue-btn {
-  /* background-color: rgb(0, 19, 88); */
-  background-color: var(--color-blue);
+  background-color: #1f57c3;
   color: #fff;
 }
 .services-left {
-  /* background-color: rgb(0, 19, 88); */
-  background-color: var(--color-blue);
+  background-color: #1f57c3;
   color: #fff;
   position: relative;
 }
@@ -417,19 +419,19 @@ img {
   width: 300px;
   height: 300px;
   position: absolute;
-  left: -120px;
+  left: -150px;
   top: -160px;
   /* z-index: -1; */
 }
 .services-right {
-  background-color: var(--color-dark-green);
+  background-color: var(--color-green);
   color: #000;
   position: relative;
 }
 .services-right-img {
   position: absolute;
   right: -140px;
-  bottom: -15px;
+  bottom: -50px;
   /* z-index: -1; */
   width: 300px;
   height: 300px;

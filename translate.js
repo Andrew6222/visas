@@ -30,7 +30,7 @@ const text = {
     { show_more_1: "Узнать больше" },
     { show_more_2: "Узнать больше" },
     { about: "Почему выбирают именно нас" },
-    { about_1: "Самая крупная школа на Пхукете" },
+    // { about_1: "Самая крупная школа на Пхукете" },
     { about_2: "Работаем более 10 лет" },
     { about_3: "Занимаемся всеми типами виз" },
     { about_4: "Возможность изучения сразу нескольких языков с носителями" },
@@ -96,7 +96,7 @@ const text = {
     { show_more_1: "Show more" },
     { show_more_2: "Show more" },
     { about: "Why Do People Choose Us" },
-    { about_1: "The largest school in Phuket" },
+    // { about_1: "The largest school in Phuket" },
     { about_2: "We have been operating for over 10 years" },
     { about_3: "We deal with all types of visas" },
     {
