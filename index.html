@@ -440,9 +440,8 @@
     </div>
     <div class="modals">
       <div class="modal-overlay">
-        
         <div class="modal modal-form" data-target="modalform">
-          <img src="./image/form-img.png" alt="" class="form-img">
+          <img src="./image/form-img.png" alt="" class="form-img" />
           <form class="form" id="form">
             <div class="input-item">
               <input
@@ -458,7 +457,12 @@
             </div>
 
             <div class="input-item">
-              <input type="email" class="form-input" placeholder="Email" name="email"/>
+              <input
+                type="email"
+                class="form-input"
+                placeholder="Email"
+                name="email"
+              />
             </div>
 
             <div class="input-item">
@@ -485,22 +489,23 @@
 
             <button class="form-input form-btn" id="form-btn">Отправить</button>
             <div class="form-input form-agree">
-              <input
-                type="checkbox"
-                class="form-checkbox"
-                id="input-checkbox"
-                name="checkbox"
-              />
-              <p class="form-input-text">
-                Я согласен на обработку персональных данных согласно
-                <a href="#" class="form-agree-link">
-                  Политике конфиденциальности
-                </a>
-                <p class="form-input-error" id="input-checkbox-error">
-                  fill the field
+              <div class="form-agree-wrap">
+                <input
+                  type="checkbox"
+                  class="form-checkbox"
+                  id="input-checkbox"
+                  name="checkbox"
+                />
+                <p class="form-input-text">
+                  Я согласен на обработку персональных данных согласно
+                  <a href="#" class="form-agree-link">
+                    Политике конфиденциальности
+                  </a>
                 </p>
+              </div>
+              <p class="form-input-error" id="input-checkbox-error">
+                fill the field
               </p>
-
             </div>
           </form>
         </div>
