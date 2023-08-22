@@ -562,15 +562,18 @@ img {
   width: 100%;
   opacity: 0;
   visibility: hidden;
+  z-index: 1000;
 }
 .modal {
-  background-color: #fff;
-  width: 500px;
-  height: 500px;
+  background-color: var(--color-blue);
+  max-width: 35vw;
+  max-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   display: none;
+  border-radius: 12px;
+  position: relative;
 }
 
 .modal-overlay-visible {
@@ -581,4 +584,59 @@ img {
 
 .modal-visible {
   display: block;
+}
+/* форма визуал */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  max-width: 100%;
+}
+
+.input-item {
+  width: 100%;
+}
+.form-input {
+  border-radius: 12px;
+  padding: 10px 20px;
+  border: none;
+  width: 80%;
+}
+.input-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.form-btn {
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: var(--color-green);
+}
+.form-agree {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  padding: 0;
+}
+.form-checkbox {
+  margin-right: 5px;
+}
+.form-input-text,
+.form-agree-link {
+  font-size: 12px;
+}
+
+.form-input-error {
+  margin-top: 10px;
+  color: red;
+  font-size: 14px;
+  display: none;
+}
+
+.form-img {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: -180px;
+  left: 130px;
+  z-index: 1;
 }

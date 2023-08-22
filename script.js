@@ -35,18 +35,18 @@ setInterval(showPreviousSlide, 3000);
 // hero slider
 
 let elems = [
-  {id: document.getElementById("hero1"), status: 'open'},
-  {id: document.getElementById("hero2"), status: 'close'}
+  { id: document.getElementById("hero1"), status: "open" },
+  { id: document.getElementById("hero2"), status: "close" },
 ];
 
 displayFunc = () => {
   elems.forEach((elem) => {
-    if (elem.status === 'open') {
-      elem.status = 'close';
+    if (elem.status === "open") {
+      elem.status = "close";
       elem.id.classList.add("displaynone");
       elem.id.classList.remove("showblock");
     } else {
-      elem.status = 'open';
+      elem.status = "open";
       elem.id.classList.remove("displaynone");
       elem.id.classList.add("showblock");
     }
@@ -92,7 +92,7 @@ function openDropdown() {
 
   window.onclick = function (event) {
     if (!event.target.matches(".dropdown-nav-link")) {
-      var dropdowns = document.getElementById("dropdown")
+      var dropdowns = document.getElementById("dropdown");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
@@ -107,4 +107,44 @@ function openDropdown() {
 window.addEventListener("load", () => {
   document.getElementById("circle").classList.add("circle-append");
   document.getElementById("hero1").classList.add("hero1show");
+});
+
+// валидация
+
+const FORM = document.getElementById("form");
+const FORMBTN = document.getElementById("form-btn");
+const inputName = document.getElementById("input-name");
+const inputPhone = document.getElementById("input-phone");
+const inputCheckbox = document.getElementById("input-checkbox");
+
+FORM.addEventListener("submit", (e) => {
+  e.preventDefault();
+  errorCount = true;
+  const FORMDATA = new FormData(FORM);
+  const name = FORMDATA.get("name");
+  const email = FORMDATA.get("email");
+  const phone = FORMDATA.get("phone");
+  const text = FORMDATA.get("text");
+  const checkbox = FORMDATA.get("checkbox");
+  // console.log(typeof checkbox); если отмечен, то string "on", иначе - null
+  if (name.trim() == "") {
+    document.getElementById("input-name-error").style.display = "block";
+    errorCount = false;
+  } else document.getElementById("input-name-error").style.display = "none";
+  if (phone.trim().length < 10 || phone.trim().length > 13) {
+    document.getElementById("input-phone-error").style.display = "block";
+    errorCount = false;
+  } else document.getElementById("input-phone-error").style.display = "none";
+  if (checkbox == null) {
+    document.getElementById("input-checkbox-error").style.display = "block";
+    errorCount = false;
+  } else document.getElementById("input-checkbox-error").style.display = "none";
+  if (errorCount) {
+    FORM.style.display = "none";
+    // let success = document.createElement("div");
+    // success.textContent = "Форма успешно отправлена";
+    // FORM.append(success);
+    // success.style.display = "block";
+    // success.style.zIndex = 10000;
+  }
 });
