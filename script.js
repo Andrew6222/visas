@@ -140,11 +140,9 @@ FORM.addEventListener("submit", (e) => {
     errorCount = false;
   } else document.getElementById("input-checkbox-error").style.display = "none";
   if (errorCount) {
-    FORM.style.display = "none";
-    // let success = document.createElement("div");
-    // success.textContent = "Форма успешно отправлена";
-    // FORM.append(success);
-    // success.style.display = "block";
-    // success.style.zIndex = 10000;
+    document.getElementById("form-wrapper").style.display = "none";
+    document.getElementById("form-img").style.display = "none";
+    FORM.textContent =
+      "Спасибо, ваша заявка отправлена! Мы свяжемся с вами и ответим на все ваши вопросы";
   }
 });

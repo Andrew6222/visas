@@ -58,7 +58,10 @@
                     <div class="nav-arrow"></div>
                   </a>
                   <div class="nav-sublist" id="dropdown">
-                    <a href="" class="nav-sublink" id="nav_sublink_school"
+                    <a
+                      href="./school.html"
+                      class="nav-sublink"
+                      id="nav_sublink_school"
                       >Языковая школа</a
                     >
                     <a href="" class="nav-sublink" id="nav_sublink_services"
@@ -441,71 +444,76 @@
     <div class="modals">
       <div class="modal-overlay">
         <div class="modal modal-form" data-target="modalform">
-          <img src="./image/form-img.png" alt="" class="form-img" />
+          <img src="./image/form-img.png" id="form-img" class="form-img" />
+
           <form class="form" id="form">
-            <div class="input-item">
-              <input
-                type="text"
-                class="form-input"
-                placeholder="Your name"
-                id="input-name"
-                name="name"
-              />
-              <p class="form-input-error" id="input-name-error">
-                fill the field
-              </p>
-            </div>
-
-            <div class="input-item">
-              <input
-                type="email"
-                class="form-input"
-                placeholder="Email"
-                name="email"
-              />
-            </div>
-
-            <div class="input-item">
-              <input
-                type="tel"
-                class="form-input"
-                placeholder="Phone number"
-                id="input-phone"
-                name="phone"
-              />
-              <p class="form-input-error" id="input-phone-error">
-                fill the field
-              </p>
-            </div>
-
-            <div class="input-item">
-              <input
-                type="text"
-                class="form-input"
-                placeholder="Reason for contacting"
-                name="text"
-              />
-            </div>
-
-            <button class="form-input form-btn" id="form-btn">Отправить</button>
-            <div class="form-input form-agree">
-              <div class="form-agree-wrap">
+            <div class="form-wrapper" id="form-wrapper">
+              <div class="input-item">
                 <input
-                  type="checkbox"
-                  class="form-checkbox"
-                  id="input-checkbox"
-                  name="checkbox"
+                  type="text"
+                  class="form-input"
+                  placeholder="Your name"
+                  id="input-name"
+                  name="name"
                 />
-                <p class="form-input-text">
-                  Я согласен на обработку персональных данных согласно
-                  <a href="#" class="form-agree-link">
-                    Политике конфиденциальности
-                  </a>
+                <p class="form-input-error" id="input-name-error">
+                  fill the field
                 </p>
               </div>
-              <p class="form-input-error" id="input-checkbox-error">
-                fill the field
-              </p>
+
+              <div class="input-item">
+                <input
+                  type="email"
+                  class="form-input"
+                  placeholder="Email"
+                  name="email"
+                />
+              </div>
+
+              <div class="input-item">
+                <input
+                  type="tel"
+                  class="form-input"
+                  placeholder="Phone number"
+                  id="input-phone"
+                  name="phone"
+                />
+                <p class="form-input-error" id="input-phone-error">
+                  fill the field
+                </p>
+              </div>
+
+              <div class="input-item">
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="Reason for contacting"
+                  name="text"
+                />
+              </div>
+
+              <button class="input-item form-btn form-input" id="form-btn">
+                Отправить
+              </button>
+              <div class="input-item form-agree">
+                <div class="form-agree-wrap">
+                  <input
+                    type="checkbox"
+                    class="form-checkbox"
+                    id="input-checkbox"
+                    name="checkbox"
+                  />
+                  <p class="form-input-text">
+                    Я согласен на обработку персональных данных согласно
+                    <a href="#" class="form-agree-link">
+                      Политике конфиденциальности
+                    </a>
+                  </p>
+                </div>
+                <p class="form-input-error" id="input-checkbox-error">
+                  fill the field
+                </p>
+              </div>
             </div>
           </form>
         </div>
