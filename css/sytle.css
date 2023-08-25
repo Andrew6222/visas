@@ -592,7 +592,8 @@ img {
   align-items: center;
   padding: 40px;
   max-width: 100%;
-  background-color: #fff;
+  background-color: var(--color-blue);
+  border-radius: 12px;
 }
 .form-wrapper {
   display: block;
@@ -607,7 +608,8 @@ img {
   width: calc(100% - 20px);
   padding: 10px;
   border-radius: 12px;
-  background-color: var(--color-blue);
+  /* background-color: var(--color-blue); */
+  background-color: #fff;
 }
 /* .form-input {
   border-radius: 12px;

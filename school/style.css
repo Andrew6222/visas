@@ -269,13 +269,13 @@ img {
   padding-bottom: 50px;
 }
 .languages-block-us {
-  background-color: blue;
+  background-color: rgb(148, 148, 255);
 }
 .languages-block-th {
   background-color: var(--color-green);
 }
 .languages-block-ch {
-  background-color: red;
+  background-color: rgb(255, 134, 134);
 }
 
 .languages-item {
