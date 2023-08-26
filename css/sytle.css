@@ -592,7 +592,7 @@ img {
   align-items: center;
   padding: 40px;
   max-width: 100%;
-  background-color: var(--color-blue);
+  background-color: #1f57c3;
   border-radius: 12px;
 }
 .form-wrapper {
@@ -611,18 +611,14 @@ img {
   /* background-color: var(--color-blue); */
   background-color: #fff;
 }
-/* .form-input {
+.from-select {
+  width: calc(100% + 3px);
+}
+.from-select {
+  padding: 10px;
+  border: 1px solid #000;
   border-radius: 12px;
-  padding: 10px 20px;
-  border: none;
-  width: 80%;
 }
-.input-item {
-  width: 100%;
-}
-.input-item:not(:last-child) {
-  margin-bottom: 20px;
-} */
 .form-btn {
   margin-bottom: 10px;
   cursor: pointer;

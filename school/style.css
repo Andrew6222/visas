@@ -350,6 +350,11 @@ img {
   padding: 30px;
   background-color: #f7faf7;
   border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.services-item:hover {
+  background-color: rgb(199, 199, 199);
 }
 .services-item-text {
   text-align: center;
