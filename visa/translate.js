@@ -12,7 +12,11 @@ const text = {
     { visa_header: "Любой тип виз, для вас" },
     {
       visa_text:
-        "Планируете долгое пребывание в Таиланде? Нужна виза? Обратитесь к нам. Мы ценим каждую минуту вашего времени и предоставим профессиональную помощь в оформлении визы. Мы поможем вам разобраться в вашей индивидуальной ситуации и выбрать наиболее оптимальный вариант. Свяжитесь с нами, чтобы получить подробную и БЕСПЛАТНУЮ консультацию.",
+        "Планируете долгое пребывание в Таиланде? Нужна виза? Обратитесь к нам. Мы ценим каждую минуту вашего времени и предоставим профессиональную помощь в оформлении визы. Мы поможем вам разобраться в вашей индивидуальной ситуации и выбрать наиболее оптимальный вариант.",
+    },
+    {
+      visa_text_2:
+        " Свяжитесь с нами, чтобы получить подробную и БЕСПЛАТНУЮ консультацию.",
     },
     { visa_btn: "Связаться с нами" },
     { section_header: "Какой тип визы вас интересует?" },
@@ -42,8 +46,9 @@ const text = {
     { visa_header: "Any type of visa, for you" },
     {
       visa_text:
-        "Planning a long stay in Thailand? Need a visa? Reach out to us. We value every moment of your time and will provide professional assistance in visa processing. We will help you navigate your individual situation and choose the most suitable option. Contact us to receive a detailed and FREE consultation. ",
+        "Planning a long stay in Thailand? Need a visa? Reach out to us. We value every moment of your time and will provide professional assistance in visa processing. We will help you navigate your individual situation and choose the most suitable option.  ",
     },
+    { visa_text_2: "Contact us to receive a detailed and FREE consultation." },
     { visa_btn: "contact us " },
     { section_header: "Which type of visa are you interested in?" },
     { type_item_1: "Student visa" },

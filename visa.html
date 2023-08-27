@@ -96,10 +96,10 @@
               нам. Мы ценим каждую минуту вашего времени и предоставим
               профессиональную помощь в оформлении визы. Мы поможем вам
               разобраться в вашей индивидуальной ситуации и выбрать наиболее
-              оптимальный вариант. Свяжитесь с нами, чтобы получить подробную и
-              БЕСПЛАТНУЮ консультацию.
-            </p>
-            <a href="#" class="visa-btn btn" id="visa_btn">Связаться с нами</a>
+              оптимальный вариант.
+              <p id="visa_text_2" class="visa-text">Свяжитесь с нами, чтобы получить подробную и БЕСПЛАТНУЮ консультацию.</p>
+            </p> 
+            <a href="#" class="visa-btn btn" id="visa_btn" data-path="modalform">Связаться с нами</a>
           </div>
         </section>
         <section class="type-section">
@@ -108,36 +108,36 @@
               Какой тип визы вас интересует?
             </h2>
             <div class="type-list">
-              <a class="type-item">
+              <a class="type-item btn" data-path="modalform">
                 <img src="./visa/image/visa1.png" class="type-item-img" />
                 <h3 class="type-item-text" id="type_item_1">
                   Студенческая виза
                 </h3>
               </a>
-              <a class="type-item">
-                <img src="./visa/image/visa1.png" class="type-item-img" />
+              <a class="type-item btn" data-path="modalform">
+                <img src="./visa/image/visa2.png" class="type-item-img" />
                 <h3 class="type-item-text" id="type_item_2">
                   Университетская виза
                 </h3>
               </a>
-              <a class="type-item">
-                <img src="./visa/image/visa1.png" class="type-item-img" />
+              <a class="type-item btn" data-path="modalform">
+                <img src="./visa/image/visa3.png" class="type-item-img" />
                 <h3 class="type-item-text" id="type_item_3">Пенсионная виза</h3>
               </a>
-              <a class="type-item">
-                <img src="./visa/image/visa1.png" class="type-item-img" />
+              <a class="type-item btn" data-path="modalform">
+                <img src="./visa/image/visa4.png" class="type-item-img" />
                 <h3 class="type-item-text" id="type_item_4">
                   Бизнес Виза / Разрешение на работу
                 </h3>
               </a>
-              <a class="type-item">
-                <img src="./visa/image/visa1.png" class="type-item-img" />
+              <a class="type-item btn" data-path="modalform">
+                <img src="./visa/image/visa5.png" class="type-item-img" />
                 <h3 class="type-item-text" id="type_item_5">
                   Туристическая виза
                 </h3>
               </a>
-              <a class="type-item">
-                <img src="./visa/image/visa1.png" class="type-item-img" />
+              <a class="type-item btn" data-path="modalform">
+                <img src="./visa/image/visa6.png" class="type-item-img" />
                 <h3 class="type-item-text" id="type_item_6">
                   Border run/Visa run
                 </h3>
@@ -184,8 +184,99 @@
           </div>
         </div>
       </footer>
-      <script src="./school/school.js"></script>
-      <script src="./visa/translate.js"></script>
     </div>
+    <div class="modals">
+      <div class="modal-overlay">
+        <div class="modal modal-form" data-target="modalform">
+          <img src="./image/form-img.png" id="form-img" class="form-img" />
+
+          <form class="form" id="form">
+            <div class="form-wrapper" id="form-wrapper">
+              <div class="input-item">
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="Your name"
+                  id="input-name"
+                  name="name"
+                />
+                <p class="form-input-error" id="input-name-error">
+                  fill the field
+                </p>
+              </div>
+
+              <div class="input-item">
+                <input
+                  type="email"
+                  class="form-input"
+                  placeholder="Email"
+                  name="email"
+                />
+              </div>
+
+              <div class="input-item">
+                <input
+                  type="tel"
+                  class="form-input"
+                  placeholder="Phone number"
+                  id="input-phone"
+                  name="phone"
+                />
+                <p class="form-input-error" id="input-phone-error">
+                  fill the field
+                </p>
+              </div>
+
+              <div class="input-item">
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="Reason for contacting"
+                  name="text"
+                />
+              </div>
+              <!-- <div class="input-item">
+                  <p>Выбирите предпочетаемый способ связи</p>
+                  <img src="./image/social/ph.svg" class="form-contact-img" />
+                  <img src="./image/social/tg.svg" class="form-contact-img" />
+                  <img src="./image/social/wa.svg" class="form-contact-img" />
+                </div> -->
+              <div class="input-item">
+                <select name="" id="" class="from-select">
+                  <option value="1">Telegram</option>
+                  <option value="2">Whatsapp</option>
+                  <option value="3">Line</option>
+                </select>
+              </div>
+              <button class="input-item form-btn form-input" id="form-btn">
+                Отправить
+              </button>
+              <div class="input-item form-agree">
+                <div class="form-agree-wrap">
+                  <input
+                    type="checkbox"
+                    class="form-checkbox"
+                    id="input-checkbox"
+                    name="checkbox"
+                  />
+                  <p class="form-input-text">
+                    Я согласен на обработку персональных данных согласно
+                    <a href="#" class="form-agree-link">
+                      Политике конфиденциальности
+                    </a>
+                  </p>
+                </div>
+                <p class="form-input-error" id="input-checkbox-error">
+                  fill the field
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal modal-test" data-target="modaltest">тест</div>
+      </div>
+    </div>
+    <script src="./school/school.js"></script>
+    <script src="./visa/translate.js"></script>
   </body>
 </html>
