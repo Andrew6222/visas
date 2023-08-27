@@ -28,6 +28,12 @@
   padding: 10px 15px;
   border-radius: 15px;
   display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+.visa-btn:hover {
+  color: #fff;
+  border-color: #fff;
+  background-color: transparent;
 }
 /* type */
 .type-section {

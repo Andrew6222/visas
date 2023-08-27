@@ -49,7 +49,7 @@ const text = {
         "Planning a long stay in Thailand? Need a visa? Reach out to us. We value every moment of your time and will provide professional assistance in visa processing. We will help you navigate your individual situation and choose the most suitable option.  ",
     },
     { visa_text_2: "Contact us to receive a detailed and FREE consultation." },
-    { visa_btn: "contact us " },
+    { visa_btn: "Contact us " },
     { section_header: "Which type of visa are you interested in?" },
     { type_item_1: "Student visa" },
     { type_item_2: "University visa " },
