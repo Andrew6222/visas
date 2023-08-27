@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>visa</title>
+    <link rel="stylesheet" href="./css/normolize.css" />
+    <link rel="stylesheet" href="./school/style.css" />
+    <link rel="stylesheet" href="./css/effects.css" />
+    <link rel="stylesheet" href="./visa/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header-container">
+          <button class="header-burger" id="burger">
+            <span></span><span></span><span></span>
+          </button>
+          <a href="#" class="logo">
+            <img src="./image/logo.png" class="logo-img" />
+            <p class="logo-text">ORIENTAL BAMBOO</p>
+          </a>
+          <nav class="nav">
+            <div class="nav-items">
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a href="./index.html" class="nav-link" id="nav_link_main"
+                    >Главная</a
+                  >
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-nav-link"
+                    onclick="openDropdown()"
+                  >
+                    <p id="nav_link_services">Услуги</p>
+                    <div class="nav-arrow"></div>
+                  </a>
+                  <div class="nav-sublist" id="dropdown">
+                    <a href="" class="nav-sublink" id="nav_sublink_visa"
+                      >Визы</a
+                    >
+                    <a href="" class="nav-sublink" id="nav_sublink_services"
+                      >Услуги для бизнеса</a
+                    >
+                    <a
+                      href="./school.html"
+                      class="nav-sublink"
+                      id="nav_sublink_school"
+                      >Языковая школа</a
+                    >
+                  </div>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link" id="reviews">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" id="contacts">Контакты</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="nav-link nav-lang"
+                    onclick="changeLanguage('ru')"
+                    >Русский</a
+                  >
+                  /
+                  <a
+                    href="#"
+                    class="nav-link nav-lang"
+                    onclick="changeLanguage('en')"
+                    >English</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="header-contacts">
+            <a href="tel:+66661075986" class="header-contact"
+              >+66 661 075 986
+            </a>
+            <img src="./image/social/ph.svg" />
+            <img src="./image/social/tg.svg" />
+            <img src="./image/social/wa.svg" />
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="visa-section">
+          <div class="container visa-container">
+            <h2 class="visa-header" id="visa_header">Любой тип виз, для вас</h2>
+            <p class="visa-text" id="visa_text">
+              Планируете долгое пребывание в Таиланде? Нужна виза? Обратитесь к
+              нам. Мы ценим каждую минуту вашего времени и предоставим
+              профессиональную помощь в оформлении визы. Мы поможем вам
+              разобраться в вашей индивидуальной ситуации и выбрать наиболее
+              оптимальный вариант. Свяжитесь с нами, чтобы получить подробную и
+              БЕСПЛАТНУЮ консультацию.
+            </p>
+            <a href="#" class="visa-btn btn" id="visa_btn">Связаться с нами</a>
+          </div>
+        </section>
+        <section class="type-section">
+          <div class="container type-container">
+            <h2 class="section-header" id="section_header">
+              Какой тип визы вас интересует?
+            </h2>
+            <div class="type-list">
+              <a class="type-item">
+                <img src="./visa/image/visa1.png" class="type-item-img" />
+                <h3 class="type-item-text" id="type_item_1">
+                  Студенческая виза
+                </h3>
+              </a>
+              <a class="type-item">
+                <img src="./visa/image/visa1.png" class="type-item-img" />
+                <h3 class="type-item-text" id="type_item_2">
+                  Университетская виза
+                </h3>
+              </a>
+              <a class="type-item">
+                <img src="./visa/image/visa1.png" class="type-item-img" />
+                <h3 class="type-item-text" id="type_item_3">Пенсионная виза</h3>
+              </a>
+              <a class="type-item">
+                <img src="./visa/image/visa1.png" class="type-item-img" />
+                <h3 class="type-item-text" id="type_item_4">
+                  Бизнес Виза / Разрешение на работу
+                </h3>
+              </a>
+              <a class="type-item">
+                <img src="./visa/image/visa1.png" class="type-item-img" />
+                <h3 class="type-item-text" id="type_item_5">
+                  Туристическая виза
+                </h3>
+              </a>
+              <a class="type-item">
+                <img src="./visa/image/visa1.png" class="type-item-img" />
+                <h3 class="type-item-text" id="type_item_6">
+                  Border run/Visa run
+                </h3>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container footer-container">
+          <a href="#" class="logo">
+            <img src="./image/logo.png" class="logo-img footer-logo-img" />
+            <p class="logo-text footer-logo">ORIENTAL BAMBOO</p>
+          </a>
+          <div class="footer-content">
+            <ul class="footer-list">
+              <li class="footer-item" id="footer_main">Главная</li>
+              <li class="footer-item" id="footer_services">Услуги</li>
+              <li class="footer-item" id="footer_services_1">
+                Услуги для бизнеса
+              </li>
+              <li class="footer-item" id="footer_school">Языковая школа</li>
+              <li class="footer-item" id="footer_visa">Визы</li>
+              <li class="footer-item" id="footer_review">Отзывы</li>
+            </ul>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <img src="./image/footer/footer1.svg" class="footer-img" />
+                <a href="#">Facebook</a>
+              </li>
+              <li class="footer-item">
+                <img src="./image/footer/footer2.svg" class="footer-img" />
+                <a href="#">Telegram</a>
+              </li>
+              <li class="footer-item">
+                <img src="./image/footer/footer3.svg" class="footer-img" />
+                <a href="#">Instagram</a>
+              </li>
+              <li class="footer-item">
+                <img src="./image/footer/footer4.svg" class="footer-img" />
+                <a href="#">Вконтакте</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <script src="./school/school.js"></script>
+      <script src="./visa/translate.js"></script>
+    </div>
+  </body>
+</html>

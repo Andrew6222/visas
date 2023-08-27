@@ -255,6 +255,9 @@ img {
   line-height: 1.5;
   font-size: 18px;
 }
+.hero-subtext {
+  font-size: 18px;
+}
 .hero-btns {
   display: flex;
   flex-direction: row;
