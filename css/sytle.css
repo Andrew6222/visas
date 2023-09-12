@@ -449,6 +449,43 @@ img {
   width: 300px;
   height: 300px;
 }
+
+/* test */
+.test-section {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.test-container {
+  border: 1px solid #e0e0e0;
+  padding: 20px 50px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.test-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text-text {
+  font-size: 24px;
+  margin-left: 20px;
+  max-width: 50%;
+}
+.test-btn {
+  padding: 10px 20px;
+  border-radius: 18px;
+  border: 1px solid #d1d1d1;
+  color: var(--color-green);
+  transition: all 0.3s ease-in-out;
+}
+.test-btn:hover {
+  background-color: #eaeaea;
+}
 /* find */
 
 .find-section {
@@ -596,7 +633,7 @@ img {
   align-items: center;
   padding: 40px;
   max-width: 100%;
-  background-color: #1f57c3;
+  background-color: #13544e;
   border-radius: 12px;
 }
 .form-wrapper {

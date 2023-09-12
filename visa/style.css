@@ -1,7 +1,4 @@
 .visa-section {
-  background: url(./background.webp);
-}
-.visa-section {
   display: flex;
   flex-direction: row;
   align-items: start;
@@ -9,6 +6,8 @@
   height: 50vh;
   padding-top: 150px;
   padding-bottom: 50px;
+  background: url(./background.webp);
+  background-size: 100%;
 }
 .visa-header {
   color: #fff;
