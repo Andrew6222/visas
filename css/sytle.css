@@ -496,7 +496,17 @@ img {
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
 }
+.company-item-text {
+  padding: 70px;
+}
+.company-header {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-family: neue;
+}
+/* .company-text {
 
+} */
 .company-img-2 {
   transform: translate(-50px, -50px);
 }
